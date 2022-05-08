@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from PIL import Image
-from plotly import graph_objs as go
+from plotly import graph_objects as go
 
 #import yfinance
 
