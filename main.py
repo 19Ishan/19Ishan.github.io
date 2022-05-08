@@ -9,7 +9,7 @@ st.write("""This is the python project
 
 
 """)
-image = Image.open("https://github.com/19Ishan/19Ishan.github.io/blob/master/stockpic.jpg")
+# image = Image.open("https://github.com/19Ishan/19Ishan.github.io/blob/master/stockpic.jpg")
 st.image(image, use_column_width=True)
 st.sidebar.header('User Input')
 
