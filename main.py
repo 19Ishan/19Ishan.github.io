@@ -80,21 +80,27 @@ company_name = get_company_name(symbol.upper())
 
 # def get_graph(symbol, start, end):
 if symbol.upper() == 'AMZN':
+        image = Image.open("VENV/amzn.png")
         st.header('Amazon Close prize\n')
         st.image(image, use_column_width=True)
 elif symbol.upper() == 'TSLA':
+#         image = Image.open("stockpic.jpg")
         st.header('Tesla Close prize\n')
         st.image(image, use_column_width=True)
 elif symbol.upper() == 'GOOG':
+#         image = Image.open("stockpic.jpg")
         st.header('Google Close prize\n')
         st.image(image, use_column_width=True)
 elif symbol.upper() == 'TCS':
+#         image = Image.open("stockpic.jpg")
         st.header('TCS Close prize\n')
         st.image(image, use_column_width=True)
 elif symbol.upper() == 'AIRTEL':
+#         image = Image.open("VENV/amzn.png")
         st.header('Airtel Close prize\n')
         st.image(image, use_column_width=True)
 elif symbol.upper() == 'WIPRO':
+#         image = Image.open("stockpic.jpg")
         st.header('Wipro Close prize\n')
         st.image(image, use_column_width=True)
         
