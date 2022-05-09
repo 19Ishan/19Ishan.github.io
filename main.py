@@ -97,7 +97,7 @@ if symbol.upper() == 'AMZN':
         
         
 #Display the close prize
-st.header(company_name+' Close prize\n')
+# st.header(company_name+' Close prize\n')
 # st.line_chart(df['Close'])
 
 
