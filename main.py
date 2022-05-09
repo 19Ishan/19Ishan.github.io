@@ -80,7 +80,7 @@ company_name = get_company_name(symbol.upper())
 
 def get_graph(symbol, start, end):
       if symbol.upper() == 'AMZN':
-        st.header(company_name+' Close prize\n')
+        st.header('Amazon Close prize\n')
         st.image(image, use_column_width=True)
 #     elif symbol.upper() == 'TSLA':
 #         df = pd.read_csv("gtsla.csv")#copy path  for tsla.csv
