@@ -78,6 +78,24 @@ df = get_data(symbol, start, end)
 #getting the company name
 company_name = get_company_name(symbol.upper())
 
+def get_graph(symbol, start, end):
+if symbol.upper() == 'AMZN':
+        st.header(company_name+' Close prize\n')
+        st.image(image, use_column_width=True)
+#     elif symbol.upper() == 'TSLA':
+#         df = pd.read_csv("gtsla.csv")#copy path  for tsla.csv
+#     elif symbol.upper() == 'GOOG':
+#         df = pd.read_csv("goog.csv")#copy path  for Goog.csv
+#     elif symbol.upper() == 'TCS':
+#         df = pd.read_csv("gtcs.csv")#copy path  for tcs.csv
+#     elif symbol.upper() == 'AIRTEL':
+#         df = pd.read_csv("gartl.csv")#copy path  for airtel.csv
+#     elif symbol.upper() == 'WIPRO':
+#         df = pd.read_csv("gwpro.csv")#copy path  for wipro.csv
+#     else:
+#         df = pd.DataFrame(columns=['Date','Close', 'Open', 'Volume', 'Adj Close', 'High', 'Low'])
+        
+        
 #Display the close prize
 st.header(company_name+' Close prize\n')
 # st.line_chart(df['Close'])
