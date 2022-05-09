@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 from PIL import Image
-# import graph_objects as go
+import graph_objects as go
 
 #import yfinance
 
@@ -10,7 +10,7 @@ st.write("""This is the python project
 
 
 """)
-image = Image.open("https://drive.google.com/file/d/1CsHZpLtO3gxneeuifLjiIgULSLMYlgCR/view?usp=sharing")
+image = Image.open("stockpic.jpg")
 st.image(image, use_column_width=True)
 st.sidebar.header('User Input')
 
@@ -38,17 +38,17 @@ def get_company_name(symbol):#getting the company name
 
 def get_data(symbol, start, end):#here we are getting company data from the start date to the end date
     if symbol.upper() == 'AMZN':
-        df = pd.read_csv("https://drive.google.com/file/d/1Z2bHUuMibuQLr98QVRZcjJUIDKPb64OA/view?usp=sharing")#copy path  for amzn.csv
+        df = pd.read_csv("gamzn.csv")#copy path  for amzn.csv
     elif symbol.upper() == 'TSLA':
-        df = pd.read_csv("https://drive.google.com/file/d/1rYS79wma7eWj74qU_Rhgag8WXSPgMQXv/view?usp=sharing")#copy path  for tsla.csv
+        df = pd.read_csv("gtsla.csv")#copy path  for tsla.csv
     elif symbol.upper() == 'GOOG':
-        df = pd.read_csv("https://drive.google.com/file/d/1ZPX5XNyUoaiwH0KKMF2YwgoBpVMGPkW-/view?usp=sharing")#copy path  for Goog.csv
+        df = pd.read_csv("goog.csv")#copy path  for Goog.csv
     elif symbol.upper() == 'TCS':
-        df = pd.read_csv("https://drive.google.com/file/d/1UbUoif9AVhLCok5CV_yvkiTxaEvbLhwI/view?usp=sharing")#copy path  for tcs.csv
+        df = pd.read_csv("gtcs.csv")#copy path  for tcs.csv
     elif symbol.upper() == 'AIRTEL':
-        df = pd.read_csv("https://drive.google.com/file/d/1dpdso9uzRNsPcPeFvIGLIxt-v_-zaV0L/view?usp=sharing")#copy path  for airtel.csv
+        df = pd.read_csv("gartl.csv")#copy path  for airtel.csv
     elif symbol.upper() == 'WIPRO':
-        df = pd.read_csv("https://drive.google.com/file/d/1ltjmwU7G1GOkQXDkoz9eaI0FiBjuTfMX/view?usp=sharing")#copy path  for wipro.csv
+        df = pd.read_csv("gwpro.csv")#copy path  for wipro.csv
     else:
         df = pd.DataFrame(columns=['Date','Close', 'Open', 'Volume', 'Adj Close', 'High', 'Low'])
 
