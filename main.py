@@ -79,7 +79,7 @@ df = get_data(symbol, start, end)
 company_name = get_company_name(symbol.upper())
 
 # def get_graph(symbol, start, end):
-      if symbol.upper() == 'AMZN':
+if symbol.upper() == 'AMZN':
         st.header('Amazon Close prize\n')
         st.image(image, use_column_width=True)
 #     elif symbol.upper() == 'TSLA':
