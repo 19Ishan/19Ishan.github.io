@@ -40,8 +40,8 @@ def get_company_name(symbol):#getting the company name
 def get_data(symbol, start, end):#here we are getting company data from the start date to the end date
     if symbol.upper() == 'AMZN':
         df = pd.read_csv("gamzn.csv")#copy path  for amzn.csv
-        st.header(company_name+' Close prize\n')
-        st.image(image, use_column_width=True)
+#         st.header(company_name+' Close prize\n')
+#         st.image(image, use_column_width=True)
     elif symbol.upper() == 'TSLA':
         df = pd.read_csv("gtsla.csv")#copy path  for tsla.csv
     elif symbol.upper() == 'GOOG':
@@ -78,7 +78,7 @@ df = get_data(symbol, start, end)
 #getting the company name
 company_name = get_company_name(symbol.upper())
 
-def get_graph(symbol, start, end):
+# def get_graph(symbol, start, end):
       if symbol.upper() == 'AMZN':
         st.header('Amazon Close prize\n')
         st.image(image, use_column_width=True)
