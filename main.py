@@ -12,7 +12,7 @@ st.write("""This is the python project
 
 """)
 image1 = Image.open("stockpic.jpg")
-st.image(image, use_column_width=True)
+st.image(image1, use_column_width=True)
 st.sidebar.header('User Input')
 
 def get_input():#This functions take the user data
