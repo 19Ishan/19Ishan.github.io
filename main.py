@@ -82,18 +82,21 @@ company_name = get_company_name(symbol.upper())
 if symbol.upper() == 'AMZN':
         st.header('Amazon Close prize\n')
         st.image(image, use_column_width=True)
-#     elif symbol.upper() == 'TSLA':
-#         df = pd.read_csv("gtsla.csv")#copy path  for tsla.csv
-#     elif symbol.upper() == 'GOOG':
-#         df = pd.read_csv("goog.csv")#copy path  for Goog.csv
-#     elif symbol.upper() == 'TCS':
-#         df = pd.read_csv("gtcs.csv")#copy path  for tcs.csv
-#     elif symbol.upper() == 'AIRTEL':
-#         df = pd.read_csv("gartl.csv")#copy path  for airtel.csv
-#     elif symbol.upper() == 'WIPRO':
-#         df = pd.read_csv("gwpro.csv")#copy path  for wipro.csv
-#     else:
-#         df = pd.DataFrame(columns=['Date','Close', 'Open', 'Volume', 'Adj Close', 'High', 'Low'])
+elif symbol.upper() == 'TSLA':
+        st.header('Tesla Close prize\n')
+        st.image(image, use_column_width=True)
+elif symbol.upper() == 'GOOG':
+        st.header('Google Close prize\n')
+        st.image(image, use_column_width=True)
+elif symbol.upper() == 'TCS':
+        st.header('TCS Close prize\n')
+        st.image(image, use_column_width=True)
+elif symbol.upper() == 'AIRTEL':
+        st.header('Airtel Close prize\n')
+        st.image(image, use_column_width=True)
+elif symbol.upper() == 'WIPRO':
+        st.header('Wipro Close prize\n')
+        st.image(image, use_column_width=True)
         
         
 #Display the close prize
@@ -102,7 +105,25 @@ if symbol.upper() == 'AMZN':
 
 
 #Display the Volume
-st.header(company_name+' Volume\n')
+# st.header(company_name+' Volume\n')
+if symbol.upper() == 'AMZN':
+        st.header('Amazon Volume\n')
+        st.image(image, use_column_width=True)
+elif symbol.upper() == 'TSLA':
+        st.header('Tesla Volume\n')
+        st.image(image, use_column_width=True)
+elif symbol.upper() == 'GOOG':
+        st.header('Google Volume\n')
+        st.image(image, use_column_width=True)
+elif symbol.upper() == 'TCS':
+        st.header('TCS Volume\n')
+        st.image(image, use_column_width=True)
+elif symbol.upper() == 'AIRTEL':
+        st.header('Airtel Volume\n')
+        st.image(image, use_column_width=True)
+elif symbol.upper() == 'WIPRO':
+        st.header('Wipro Volume\n')
+        st.image(image, use_column_width=True)
 # st.line_chart(df['Volume'])
 
 #Get statistics on the data
