@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 from PIL import Image
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 # import graph_objects as go
 
 #import yfinance
@@ -39,6 +39,7 @@ def get_company_name(symbol):#getting the company name
 
 def get_data(symbol, start, end):#here we are getting company data from the start date to the end date
     if symbol.upper() == 'AMZN':
+        image = Image.open("stockpic.jpg")
         df = pd.read_csv("gamzn.csv")#copy path  for amzn.csv
     elif symbol.upper() == 'TSLA':
         df = pd.read_csv("gtsla.csv")#copy path  for tsla.csv
@@ -78,12 +79,12 @@ company_name = get_company_name(symbol.upper())
 
 #Display the close prize
 st.header(company_name+' Close prize\n')
-st.line_chart(df['Close'])
+# st.line_chart(df['Close'])
 
 
 #Display the Volume
 st.header(company_name+' Volume\n')
-st.line_chart(df['Volume'])
+# st.line_chart(df['Volume'])
 
 #Get statistics on the data
 st.header('Data Statistics')
