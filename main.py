@@ -11,7 +11,7 @@ st.write("""This is the python project
 
 
 """)
-image = Image.open("stockpic.jpg")
+image1 = Image.open("stockpic.jpg")
 st.image(image, use_column_width=True)
 st.sidebar.header('User Input')
 
@@ -79,28 +79,29 @@ df = get_data(symbol, start, end)
 company_name = get_company_name(symbol.upper())
 
 # def get_graph(symbol, start, end):
+image = Image.open("stockpic.jpg")
 if symbol.upper() == 'AMZN':
         image = Image.open("VENV/amzn.png")
         st.header('Amazon Close prize\n')
         st.image(image, use_column_width=True)
 elif symbol.upper() == 'TSLA':
-#         image = Image.open("stockpic.jpg")
+        image = Image.open("VENV/tsla.png")
         st.header('Tesla Close prize\n')
         st.image(image, use_column_width=True)
 elif symbol.upper() == 'GOOG':
-#         image = Image.open("stockpic.jpg")
+        image = Image.open("VENV/goog.png")
         st.header('Google Close prize\n')
         st.image(image, use_column_width=True)
 elif symbol.upper() == 'TCS':
-#         image = Image.open("stockpic.jpg")
+        image = Image.open("VENV/tcs.png")
         st.header('TCS Close prize\n')
         st.image(image, use_column_width=True)
 elif symbol.upper() == 'AIRTEL':
-#         image = Image.open("VENV/amzn.png")
+        image = Image.open("VENV/artl.png")
         st.header('Airtel Close prize\n')
         st.image(image, use_column_width=True)
 elif symbol.upper() == 'WIPRO':
-#         image = Image.open("stockpic.jpg")
+        image = Image.open("VENV/wpro.png")
         st.header('Wipro Close prize\n')
         st.image(image, use_column_width=True)
         
@@ -112,24 +113,31 @@ elif symbol.upper() == 'WIPRO':
 
 #Display the Volume
 # st.header(company_name+' Volume\n')
+image2 = Image.open("stockpic.jpg")
 if symbol.upper() == 'AMZN':
+        image = Image.open("VENV/v-amzn.png")
         st.header('Amazon Volume\n')
-        st.image(image, use_column_width=True)
+        st.image(image2, use_column_width=True)
 elif symbol.upper() == 'TSLA':
+        image = Image.open("VENV/v-tsla.png")
         st.header('Tesla Volume\n')
-        st.image(image, use_column_width=True)
+        st.image(image2, use_column_width=True)
 elif symbol.upper() == 'GOOG':
+        image = Image.open("VENV/v-goog.png")
         st.header('Google Volume\n')
-        st.image(image, use_column_width=True)
+        st.image(image2, use_column_width=True)
 elif symbol.upper() == 'TCS':
+        image = Image.open("VENV/v-tcs.png")
         st.header('TCS Volume\n')
-        st.image(image, use_column_width=True)
+        st.image(image2, use_column_width=True)
 elif symbol.upper() == 'AIRTEL':
+        image = Image.open("VENV/v-artl.png")
         st.header('Airtel Volume\n')
-        st.image(image, use_column_width=True)
+        st.image(image2, use_column_width=True)
 elif symbol.upper() == 'WIPRO':
+        image = Image.open("VENV/v-wpro.png")
         st.header('Wipro Volume\n')
-        st.image(image, use_column_width=True)
+        st.image(image2, use_column_width=True)
 # st.line_chart(df['Volume'])
 
 #Get statistics on the data
