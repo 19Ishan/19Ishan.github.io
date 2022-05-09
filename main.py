@@ -115,27 +115,27 @@ elif symbol.upper() == 'WIPRO':
 # st.header(company_name+' Volume\n')
 image2 = Image.open("stockpic.jpg")
 if symbol.upper() == 'AMZN':
-        image = Image.open("VENV/v-amzn.png")
+        image2 = Image.open("VENV/v-amzn.png")
         st.header('Amazon Volume\n')
         st.image(image2, use_column_width=True)
 elif symbol.upper() == 'TSLA':
-        image = Image.open("VENV/v-tsla.png")
+        image2 = Image.open("VENV/v-tsla.png")
         st.header('Tesla Volume\n')
         st.image(image2, use_column_width=True)
 elif symbol.upper() == 'GOOG':
-        image = Image.open("VENV/v-goog.png")
+        image2 = Image.open("VENV/v-goog.png")
         st.header('Google Volume\n')
         st.image(image2, use_column_width=True)
 elif symbol.upper() == 'TCS':
-        image = Image.open("VENV/v-tcs.png")
+        image2 = Image.open("VENV/v-tcs.png")
         st.header('TCS Volume\n')
         st.image(image2, use_column_width=True)
 elif symbol.upper() == 'AIRTEL':
-        image = Image.open("VENV/v-artl.png")
+        image2 = Image.open("VENV/v-artl.png")
         st.header('Airtel Volume\n')
         st.image(image2, use_column_width=True)
 elif symbol.upper() == 'WIPRO':
-        image = Image.open("VENV/v-wpro.png")
+        image2 = Image.open("VENV/v-wpro.png")
         st.header('Wipro Volume\n')
         st.image(image2, use_column_width=True)
 # st.line_chart(df['Volume'])
